@@ -1,6 +1,6 @@
 import React, {useEffect} from 'react';
 import {useGlobal} from 'reactn';
-import {View, Text, SafeAreaView, Button, FlatList, Alert} from 'react-native';
+import {View, Text, SafeAreaView, Button, FlatList, Alert, StyleSheet} from 'react-native';
 import {Cards} from '../utils/db';
 
 const CardsScene = ({navigation}) => {
@@ -17,8 +17,8 @@ const CardsScene = ({navigation}) => {
 
   // Row for list view
   const Item = ({name, onPress}) => (
-    <View>
-      <Text onPress={onPress}>{name}</Text>
+    <View style={styles.row}>
+      <Text style={styles.rowContent} onPress={onPress}>{name}</Text>
     </View>
   );
 
@@ -42,14 +42,28 @@ const CardsScene = ({navigation}) => {
     <SafeAreaView style={{flex: 1}}>
       <FlatList
         data={cards}
+        style={styles.flatlist}
         renderItem={({item}) => (
-          <Item
-            name={item.name} onPress={() => navigation.navigate('Card-Details', item)}/>
+          <Item name={item.name} onPress={() => navigation.navigate('Card-Details', item)}/>
         )}
         keyExtractor={item => item._id}
       />
     </SafeAreaView>
   );
 };
+
+const styles = StyleSheet.create({
+  flatlist: {
+    paddingTop: 10
+  },
+  row: {
+    padding: 10,
+    borderBottomWidth: 1,
+    borderBottomColor: 'gray'
+  },
+  rowContent: {
+    fontSize: 24
+  }
+});
 
 export default CardsScene;
