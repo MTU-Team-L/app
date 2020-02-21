@@ -1,4 +1,5 @@
-import React, {useState, useEffect} from 'react';
+import React, {useEffect} from 'react';
+import {useGlobal} from 'reactn';
 import {View, Text, SafeAreaView, Button, FlatList, Alert} from 'react-native';
 import {Cards} from '../utils/db';
 
@@ -21,7 +22,7 @@ const CardsScene = ({navigation}) => {
     </View>
   );
 
-  const [cards, setCards] = useState([]);
+  const [cards, setCards] = useGlobal('cards');
 
   // Run once on mount
   useEffect(() => {
@@ -35,7 +36,7 @@ const CardsScene = ({navigation}) => {
     };
 
     fetchData();
-  }, []);
+  }, [setCards]);
 
   return (
     <SafeAreaView style={{flex: 1}}>

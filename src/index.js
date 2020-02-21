@@ -1,5 +1,6 @@
 import 'react-native-gesture-handler';
 import React from 'react';
+import {setGlobal} from 'reactn';
 import {NavigationContainer} from '@react-navigation/native';
 import {createStackNavigator} from '@react-navigation/stack';
 import {createBottomTabNavigator} from '@react-navigation/bottom-tabs';
@@ -8,6 +9,11 @@ import CardsScene from './scenes/cards';
 import CardDetails from './scenes/card-details';
 import AddCardManually from './scenes/add-card-manually';
 import AddCardScan from './scenes/add-card-scan';
+
+// Set global state variables
+setGlobal({
+  cards: []
+});
 
 const Tab = createBottomTabNavigator();
 const CardsStack = createStackNavigator();
