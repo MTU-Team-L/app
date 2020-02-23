@@ -9,10 +9,12 @@ import CardsScene from './scenes/cards';
 import CardDetails from './scenes/card-details';
 import AddCardManually from './scenes/add-card-manually';
 import AddCardScan from './scenes/add-card-scan';
-
+import DecksScene from './scenes/decks';
+import DeckAdd from './scenes/decks-add';
 // Set global state variables
 setGlobal({
-  cards: []
+  cards: [],
+  decks: []
 });
 
 const Tab = createBottomTabNavigator();
@@ -25,11 +27,14 @@ const CardsStackScreen = () => (
     <CardsStack.Screen name="Card-Details" component={CardDetails} options={({route}) => ({title: route.params.name})}/>
     <CardsStack.Screen name="Add-Card-Manually" component={AddCardManually} options={{title: 'Add a Card'}}/>
     <CardsStack.Screen name="Add-Card-Scan" component={AddCardScan} options={{title: 'Add a Card'}}/>
+
   </CardsStack.Navigator>
 );
 
 const DecksStackScreen = () => (
   <DecksStack.Navigator>
+    <DecksStack.Screen name="Decks" component={DecksScene}/>
+    <DecksStack.Screen name="Deck-Add" component={DeckAdd} options={{title: 'Create a Deck'}}/>
   </DecksStack.Navigator>
 );
 

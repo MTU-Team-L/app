@@ -23,8 +23,10 @@
     "react-native-reanimated": "^1.7.0",
     "react-native-safe-area-context": "^0.7.3",
     "react-native-screens": "^2.0.0-beta.9",
+    "react-native-search-bar": "^3.5.1",
     "react-native-simple-toast": "^1.0.0",
     "react-native-swiper": "^1.5.14",
+    "react-search-box": "^2.0.2",
     "reactn": "^2.2.6",
     "scryfall-sdk": "^1.5.1"
   },
