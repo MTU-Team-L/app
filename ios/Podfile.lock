@@ -230,6 +230,8 @@ PODS:
     - React
   - RNScreens (2.0.0-beta.9):
     - React
+  - RNSearchBar (3.5.1):
+    - React
   - Toast (4.0.0)
   - Yoga (1.14.0)
 
@@ -267,6 +269,7 @@ DEPENDENCIES:
   - RNGestureHandler (from `../node_modules/react-native-gesture-handler`)
   - RNReanimated (from `../node_modules/react-native-reanimated`)
   - RNScreens (from `../node_modules/react-native-screens`)
+  - RNSearchBar (from `../node_modules/react-native-search-bar`)
   - Yoga (from `../node_modules/react-native/ReactCommon/yoga`)
 
 SPEC REPOS:
@@ -335,6 +338,8 @@ EXTERNAL SOURCES:
     :path: "../node_modules/react-native-reanimated"
   RNScreens:
     :path: "../node_modules/react-native-screens"
+  RNSearchBar:
+    :path: "../node_modules/react-native-search-bar"
   Yoga:
     :path: "../node_modules/react-native/ReactCommon/yoga"
 
@@ -370,6 +375,7 @@ SPEC CHECKSUMS:
   RNGestureHandler: dde546180bf24af0b5f737c8ad04b6f3fa51609a
   RNReanimated: 031fe8d9ea93c2bd689a40f05320ef9d96f74d7f
   RNScreens: 797de72842e33431e68b87d95c0c9a0b3ef09819
+  RNSearchBar: 54ad41edd78385681730b02b5e069900436d996b
   Toast: 91b396c56ee72a5790816f40d3a94dd357abc196
   Yoga: f2a7cd4280bfe2cca5a7aed98ba0eb3d1310f18b
 

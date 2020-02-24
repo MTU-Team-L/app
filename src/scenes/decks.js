@@ -1,7 +1,8 @@
-import * as SearchBar from 'react-native-search-bar';
+// eslint-disable-next-line import/default
+import SearchBar from 'react-native-search-bar';
 import React, {useEffect} from 'react';
 import {useGlobal} from 'reactn';
-import {View, Text, Button, FlatList, StyleSheet} from 'react-native';
+import {View, Text, Button, FlatList, StyleSheet, SafeAreaView} from 'react-native';
 import {Decks} from '../utils/db';
 
 // Deck View Scence
@@ -39,7 +40,7 @@ const DecksScene = ({navigation}) => {
   }, [setDecks]);
 
   return (
-    <View style={{flex: 1}}>
+    <SafeAreaView style={{flex: 1}}>
       <SearchBar
         placeholder="Search"
         onChangeText={console.log}
@@ -53,7 +54,7 @@ const DecksScene = ({navigation}) => {
           )}
         keyExtractor={item => item._id}
       />
-    </View>
+    </SafeAreaView>
 
   );
 };
