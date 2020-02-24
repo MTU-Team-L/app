@@ -11,6 +11,7 @@ import AddCardManually from './scenes/add-card-manually';
 import AddCardScan from './scenes/add-card-scan';
 import DecksScene from './scenes/decks';
 import DeckAdd from './scenes/decks-add';
+import DeckManage from './scenes/deck-manage';
 // Set global state variables
 setGlobal({
   cards: [],
@@ -34,7 +35,8 @@ const CardsStackScreen = () => (
 const DecksStackScreen = () => (
   <DecksStack.Navigator>
     <DecksStack.Screen name="Decks" component={DecksScene}/>
-    <DecksStack.Screen name="Deck-Add" component={DeckAdd} options={{title: 'Create a Deck'}}/>
+    <DecksStack.Screen name="Deck-Add" component={DeckAdd} options={{ title: 'Create a Deck' }} />
+        <DecksStack.Screen name="Deck-Manage" component={DeckManage} options={{ title: 'Add a Card to a Deck' }}/>
   </DecksStack.Navigator>
 );
 
