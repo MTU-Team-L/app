@@ -8,7 +8,9 @@
     "start": "react-native start",
     "test": "xo && jest",
     "lint": "xo",
-    "lint-fix": "xo --fix"
+    "lint-fix": "xo --fix",
+    "coverage": "jest --coverage",
+    "send-coverage": "jest --coverage --coverageReporters=text-lcov | coveralls"
   },
   "dependencies": {
     "@react-native-community/masked-view": "^0.1.6",
@@ -36,6 +38,7 @@
     "@react-native-community/eslint-config": "^0.0.7",
     "@types/react": "^16.9.22",
     "babel-jest": "^25.1.0",
+    "coveralls": "^3.0.9",
     "eslint": "^6.8.0",
     "eslint-config-xo-react": "^0.23.0",
     "eslint-plugin-react": "^7.18.3",
