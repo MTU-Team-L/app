@@ -8,5 +8,6 @@ module.exports = {
     ')/)'
   ],
   setupFilesAfterEnv: ['<rootDir>/__tests__/setup-tests.js'],
-  testPathIgnorePatterns: ['<rootDir>/__tests__/setup-tests.js']
+  testPathIgnorePatterns: ['<rootDir>/__tests__/setup-tests.js'],
+  "collectCoverageFrom" : ["src/**/*.js"]
 };
