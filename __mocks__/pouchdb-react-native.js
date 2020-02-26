@@ -1,11 +1,13 @@
+import {jest} from 'jest-without-globals';
 import seeds from './seed-data.json';
 
-export default class {
-  constructor(db) {
-    this.db = db;
-  }
+export const mockPouchDB = jest.fn();
 
-  allDocs() {
-    return Promise.resolve(seeds[this.db]);
-  }
-}
+const mock = mockPouchDB.mockImplementation(db => {
+  return {
+    allDocs: jest.fn().mockImplementation(() => Promise.resolve(seeds[db])),
+    put: jest.fn().mockImplementation(() => Promise.resolve({}))
+  };
+});
+
+export default mock;

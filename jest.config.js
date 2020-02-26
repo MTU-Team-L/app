@@ -5,6 +5,7 @@ module.exports = {
     'node_modules/(?!(react-native' +
       '|pouchdb-adapter-asyncstorage' +
       '|pouchdb-react-native' +
+      '|react-native-simple-toast' +
     ')/)'
   ],
   setupFilesAfterEnv: ['<rootDir>/__tests__/setup-tests.js'],

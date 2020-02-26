@@ -1,0 +1,194 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`can add card 1`] = `
+Array [
+  Object {
+    "_id": "Disperse",
+    "arena_id": 67780,
+    "artist": "Ryan Yee",
+    "artist_ids": Array [
+      "8955dca7-3e37-42b4-83a9-167c78a2178f",
+    ],
+    "booster": true,
+    "border_color": "black",
+    "card_back_id": "0aeebaf5-8c7d-4636-9e82-8c27447861f7",
+    "cmc": 2,
+    "collector_number": "50",
+    "color_identity": Array [
+      "U",
+    ],
+    "colors": Array [
+      "U",
+    ],
+    "digital": false,
+    "edhrec_rank": 5219,
+    "flavor_text": "It's pointless to hold on when you have nothing to hold on with.",
+    "foil": true,
+    "frame": "2015",
+    "full_art": false,
+    "games": Array [
+      "arena",
+      "mtgo",
+      "paper",
+    ],
+    "highres_image": true,
+    "id": "2ff7c89c-41dc-4ac3-bbce-38ab86f435ea",
+    "illustration_id": "74dbe86f-c808-41db-8e6e-e59ca3d73aea",
+    "image_uris": Object {
+      "art_crop": "https://img.scryfall.com/cards/art_crop/front/2/f/2ff7c89c-41dc-4ac3-bbce-38ab86f435ea.jpg?1562301229",
+      "border_crop": "https://img.scryfall.com/cards/border_crop/front/2/f/2ff7c89c-41dc-4ac3-bbce-38ab86f435ea.jpg?1562301229",
+      "large": "https://img.scryfall.com/cards/large/front/2/f/2ff7c89c-41dc-4ac3-bbce-38ab86f435ea.jpg?1562301229",
+      "normal": "https://img.scryfall.com/cards/normal/front/2/f/2ff7c89c-41dc-4ac3-bbce-38ab86f435ea.jpg?1562301229",
+      "png": "https://img.scryfall.com/cards/png/front/2/f/2ff7c89c-41dc-4ac3-bbce-38ab86f435ea.png?1562301229",
+      "small": "https://img.scryfall.com/cards/small/front/2/f/2ff7c89c-41dc-4ac3-bbce-38ab86f435ea.jpg?1562301229",
+    },
+    "lang": "en",
+    "layout": "normal",
+    "legalities": Object {
+      "brawl": "not_legal",
+      "commander": "legal",
+      "duel": "legal",
+      "future": "not_legal",
+      "historic": "legal",
+      "legacy": "legal",
+      "modern": "legal",
+      "oldschool": "not_legal",
+      "pauper": "legal",
+      "penny": "legal",
+      "pioneer": "legal",
+      "standard": "not_legal",
+      "vintage": "legal",
+    },
+    "mana_cost": "{1}{U}",
+    "mtgo_id": 68261,
+    "multiverse_ids": Array [
+      447186,
+    ],
+    "name": "Disperse",
+    "nonfoil": true,
+    "object": "card",
+    "oracle_id": "9d8fe3f8-5027-4f9e-999e-e277caa96478",
+    "oracle_text": "Return target nonland permanent to its owner's hand.",
+    "oversized": false,
+    "prices": Object {
+      "eur": "0.04",
+      "tix": "0.04",
+      "usd": "0.04",
+      "usd_foil": "0.17",
+    },
+    "prints_search_uri": "https://api.scryfall.com/cards/search?order=released&q=oracleid%3A9d8fe3f8-5027-4f9e-999e-e277caa96478&unique=prints",
+    "promo": false,
+    "purchase_uris": Object {
+      "cardhoarder": "https://www.cardhoarder.com/cards/68261?affiliate_id=scryfall&ref=card-profile&utm_campaign=affiliate&utm_medium=card&utm_source=scryfall",
+      "cardmarket": "https://www.cardmarket.com/en/Magic/Products/Singles/Core-2019/Disperse?referrer=scryfall&utm_campaign=card_prices&utm_medium=text&utm_source=scryfall",
+      "tcgplayer": "https://shop.tcgplayer.com/product/productsearch?id=166703&partner=Scryfall&utm_campaign=affiliate&utm_medium=api&utm_source=scryfall",
+    },
+    "rarity": "common",
+    "related_uris": Object {
+      "edhrec": "https://edhrec.com/route/?cc=Disperse",
+      "gatherer": "https://gatherer.wizards.com/Pages/Card/Details.aspx?multiverseid=447186",
+      "mtgtop8": "https://mtgtop8.com/search?MD_check=1&SB_check=1&cards=Disperse",
+      "tcgplayer_decks": "https://decks.tcgplayer.com/magic/deck/search?contains=Disperse&page=1&partner=Scryfall&utm_campaign=affiliate&utm_medium=api&utm_source=scryfall",
+    },
+    "released_at": "2018-07-13",
+    "reprint": true,
+    "reserved": false,
+    "rulings_uri": "https://api.scryfall.com/cards/2ff7c89c-41dc-4ac3-bbce-38ab86f435ea/rulings",
+    "scryfall_set_uri": "https://scryfall.com/sets/m19?utm_source=api",
+    "scryfall_uri": "https://scryfall.com/card/m19/50/disperse?utm_source=api",
+    "set": "m19",
+    "set_name": "Core Set 2019",
+    "set_search_uri": "https://api.scryfall.com/cards/search?order=set&q=e%3Am19&unique=prints",
+    "set_type": "core",
+    "set_uri": "https://api.scryfall.com/sets/2f5f2509-56db-414d-9a7e-6e312ec3760c",
+    "story_spotlight": false,
+    "tcgplayer_id": 166703,
+    "textless": false,
+    "type_line": "Instant",
+    "uri": "https://api.scryfall.com/cards/2ff7c89c-41dc-4ac3-bbce-38ab86f435ea",
+    "variation": false,
+  },
+]
+`;
+
+exports[`renders correctly 1`] = `
+<RCTSafeAreaView
+  emulateUnlessSupported={true}
+  style={
+    Object {
+      "alignItems": "center",
+      "flex": 1,
+      "justifyContent": "center",
+    }
+  }
+>
+  <View
+    style={
+      Object {
+        "flexDirection": "row",
+      }
+    }
+  >
+    <TextInput
+      allowFontScaling={true}
+      onChangeText={[Function]}
+      placeholder="Card name"
+      rejectResponderTermination={true}
+      style={
+        Object {
+          "borderBottomColor": "gray",
+          "borderBottomWidth": 1,
+          "color": "black",
+          "fontSize": 24,
+          "height": 40,
+          "width": 250,
+        }
+      }
+      underlineColorAndroid="transparent"
+      value=""
+    />
+    <View
+      accessibilityRole="button"
+      accessibilityStates={Array []}
+      accessible={true}
+      focusable={true}
+      isTVSelectable={true}
+      onClick={[Function]}
+      onResponderGrant={[Function]}
+      onResponderMove={[Function]}
+      onResponderRelease={[Function]}
+      onResponderTerminate={[Function]}
+      onResponderTerminationRequest={[Function]}
+      onStartShouldSetResponder={[Function]}
+      style={
+        Object {
+          "opacity": 1,
+        }
+      }
+    >
+      <View
+        style={
+          Array [
+            Object {},
+          ]
+        }
+      >
+        <Text
+          style={
+            Array [
+              Object {
+                "color": "#007AFF",
+                "fontSize": 18,
+                "padding": 8,
+                "textAlign": "center",
+              },
+            ]
+          }
+        >
+          Add
+        </Text>
+      </View>
+    </View>
+  </View>
+</RCTSafeAreaView>
+`;
