@@ -1,13 +1,9 @@
 import React from 'react';
-import {test, jest, expect} from 'jest-without-globals';
+import {test, expect} from 'jest-without-globals';
 import {setGlobal, getGlobal} from 'reactn';
 import {render, fireEvent} from 'react-native-testing-library';
 import AddCardManually from '../src/scenes/add-card-manually';
-
-const navigationMock = {
-  setOptions: jest.fn(),
-  navigate: jest.fn()
-};
+import navigationMock from '../__mocks__/navigation-mock';
 
 test('renders correctly', async () => {
   const {toJSON} = await render(<AddCardManually navigation={navigationMock}/>);
