@@ -8,7 +8,7 @@ export default async name => {
   const doc = await Cards.put({_id: res.name, ...res});
 
   // Update global state
-  setGlobal({cards: [...getGlobal().cards, {_id: res.name, ...res}]});
+  setGlobal({cards: [...getGlobal().cards, {_id: res.name, _rev: doc.rev, ...res}]});
 
   return doc;
 };
