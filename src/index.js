@@ -35,8 +35,8 @@ const CardsStackScreen = () => (
 const DecksStackScreen = () => (
   <DecksStack.Navigator>
     <DecksStack.Screen name="Decks" component={DecksScene}/>
-    <DecksStack.Screen name="Deck-Add" component={DeckAdd} options={{ title: 'Create a Deck' }} />
-        <DecksStack.Screen name="Deck-Manage" component={DeckManage} options={{ title: 'Add a Card to a Deck' }}/>
+    <DecksStack.Screen name="Deck-Add" component={DeckAdd} options={{title: 'Create a Deck'}}/>
+    <DecksStack.Screen name="Deck-Manage" component={DeckManage} options={{title: 'Add a Card to a Deck'}}/>
   </DecksStack.Navigator>
 );
 

@@ -50,7 +50,7 @@ const DecksScene = ({navigation}) => {
         data={decks}
         style={styles.flatlist}
         renderItem={({item}) =>
-          (<Item name={item._id} onPress={() => navigation.navigate('Deck-Manage', item)}/>
+          (<Item name={item._id} onPress={() => navigation.navigate('Deck-Manage', item._id)}/>
           )}
         keyExtractor={item => item._id}
       />
