@@ -12,6 +12,7 @@ import AddCardScan from './scenes/add-card-scan';
 import DecksScene from './scenes/decks';
 import DeckAdd from './scenes/decks-add';
 import DeckManage from './scenes/deck-manage';
+
 // Set global state variables
 setGlobal({
   cards: [],

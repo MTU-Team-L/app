@@ -1,0 +1,470 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly 1`] = `
+<RCTSafeAreaView
+  emulateUnlessSupported={true}
+  style={
+    Object {
+      "flex": 1,
+    }
+  }
+>
+  <RCTScrollView
+    data={
+      Array [
+        Object {
+          "_id": "Dungeon Master",
+          "_rev": "1-bee88cce49934d0d9ba2a4df9e0274f9",
+          "artist": "Mike Burns",
+          "artist_ids": Array [
+            "184b88b1-b679-4907-91b0-b2f2a458ae20",
+          ],
+          "booster": false,
+          "border_color": "black",
+          "card_back_id": "2d53e50e-77d5-4353-9dde-0b1832d850f6",
+          "cmc": 4,
+          "collector_number": "2",
+          "color_identity": Array [
+            "U",
+            "W",
+          ],
+          "colors": Array [
+            "U",
+            "W",
+          ],
+          "digital": false,
+          "foil": false,
+          "frame": "2015",
+          "full_art": false,
+          "games": Array [
+            "paper",
+          ],
+          "highres_image": true,
+          "id": "a4cf1827-2ce6-4592-b213-858dcb115ae0",
+          "illustration_id": "365903b7-d641-4772-93ca-c1e5a0eca292",
+          "image_uris": Object {
+            "art_crop": "https://img.scryfall.com/cards/art_crop/front/a/4/a4cf1827-2ce6-4592-b213-858dcb115ae0.jpg?1573039783",
+            "border_crop": "https://img.scryfall.com/cards/border_crop/front/a/4/a4cf1827-2ce6-4592-b213-858dcb115ae0.jpg?1573039783",
+            "large": "https://img.scryfall.com/cards/large/front/a/4/a4cf1827-2ce6-4592-b213-858dcb115ae0.jpg?1573039783",
+            "normal": "https://img.scryfall.com/cards/normal/front/a/4/a4cf1827-2ce6-4592-b213-858dcb115ae0.jpg?1573039783",
+            "png": "https://img.scryfall.com/cards/png/front/a/4/a4cf1827-2ce6-4592-b213-858dcb115ae0.png?1573039783",
+            "small": "https://img.scryfall.com/cards/small/front/a/4/a4cf1827-2ce6-4592-b213-858dcb115ae0.jpg?1573039783",
+          },
+          "lang": "en",
+          "layout": "normal",
+          "legalities": Object {
+            "brawl": "not_legal",
+            "commander": "not_legal",
+            "duel": "not_legal",
+            "future": "not_legal",
+            "historic": "not_legal",
+            "legacy": "not_legal",
+            "modern": "not_legal",
+            "oldschool": "not_legal",
+            "pauper": "not_legal",
+            "penny": "not_legal",
+            "pioneer": "not_legal",
+            "standard": "not_legal",
+            "vintage": "not_legal",
+          },
+          "loyalty": "1d4+1",
+          "mana_cost": "{2}{W}{U}",
+          "multiverse_ids": Array [],
+          "name": "Dungeon Master",
+          "nonfoil": true,
+          "object": "card",
+          "oracle_id": "6bbd0bf6-cb22-431f-be1b-e76febf68cfc",
+          "oracle_text": "+1: Target opponent creates a 1/1 black Skeleton creature token with \\"When this creature dies, each opponent gains 2 life.\\"
++1: Roll a d20. If you roll a 1, skip your next turn. If you roll a 12 or higher, draw a card.
+−6: You get an adventuring party. (Your party is a 3/3 red Fighter with first strike, a 1/1 white Cleric with lifelink, a 2/2 black Rogue with hexproof, and a 1/1 blue Wizard with flying.)",
+          "oversized": false,
+          "prices": Object {
+            "eur": null,
+            "tix": null,
+            "usd": null,
+            "usd_foil": null,
+          },
+          "prints_search_uri": "https://api.scryfall.com/cards/search?order=released&q=oracleid%3A6bbd0bf6-cb22-431f-be1b-e76febf68cfc&unique=prints",
+          "promo": false,
+          "purchase_uris": Object {
+            "cardhoarder": "https://www.cardhoarder.com/cards?affiliate_id=scryfall&data%5Bsearch%5D=Dungeon+Master&ref=card-profile&utm_campaign=affiliate&utm_medium=card&utm_source=scryfall",
+            "cardmarket": "https://www.cardmarket.com/en/Magic/Products/Singles/Heroes-of-the-Realm-Promos/Dungeon-Master?referrer=scryfall&utm_campaign=card_prices&utm_medium=text&utm_source=scryfall",
+            "tcgplayer": "https://shop.tcgplayer.com/productcatalog/product/show?ProductName=Dungeon+Master&partner=Scryfall&utm_campaign=affiliate&utm_medium=api&utm_source=scryfall",
+          },
+          "rarity": "mythic",
+          "related_uris": Object {
+            "edhrec": "https://edhrec.com/route/?cc=Dungeon+Master",
+            "mtgtop8": "https://mtgtop8.com/search?MD_check=1&SB_check=1&cards=Dungeon+Master",
+            "tcgplayer_decks": "https://decks.tcgplayer.com/magic/deck/search?contains=Dungeon+Master&page=1&partner=Scryfall&utm_campaign=affiliate&utm_medium=api&utm_source=scryfall",
+          },
+          "released_at": "2017-09-20",
+          "reprint": false,
+          "reserved": false,
+          "rulings_uri": "https://api.scryfall.com/cards/a4cf1827-2ce6-4592-b213-858dcb115ae0/rulings",
+          "scryfall_set_uri": "https://scryfall.com/sets/htr?utm_source=api",
+          "scryfall_uri": "https://scryfall.com/card/htr/2/dungeon-master?utm_source=api",
+          "set": "htr",
+          "set_name": "2016 Heroes of the Realm",
+          "set_search_uri": "https://api.scryfall.com/cards/search?order=set&q=e%3Ahtr&unique=prints",
+          "set_type": "memorabilia",
+          "set_uri": "https://api.scryfall.com/sets/e9dbe497-c76a-4037-82c1-7ef338d6c54c",
+          "story_spotlight": false,
+          "textless": false,
+          "type_line": "Legendary Planeswalker — Dungeon Master",
+          "uri": "https://api.scryfall.com/cards/a4cf1827-2ce6-4592-b213-858dcb115ae0",
+          "variation": false,
+        },
+        Object {
+          "_id": "Flesh // Blood",
+          "_rev": "1-9cf56363f743470cb33639f9f25ed300",
+          "artist": "Lucas Graciano",
+          "artist_ids": Array [
+            "ce98f39c-7cdd-47e6-a520-6c50443bb4c2",
+          ],
+          "booster": true,
+          "border_color": "black",
+          "card_back_id": "0aeebaf5-8c7d-4636-9e82-8c27447861f7",
+          "card_faces": Array [
+            Object {
+              "artist": "Lucas Graciano",
+              "artist_id": "ce98f39c-7cdd-47e6-a520-6c50443bb4c2",
+              "illustration_id": "5c13b10e-ae6b-4b28-89fa-16aa830f8267",
+              "mana_cost": "{3}{B}{G}",
+              "name": "Flesh",
+              "object": "card_face",
+              "oracle_text": "Exile target creature card from a graveyard. Put X +1/+1 counters on target creature, where X is the power of the card you exiled.
+Fuse (You may cast one or both halves of this card from your hand.)",
+              "type_line": "Sorcery",
+              "watermark": "golgari",
+            },
+            Object {
+              "artist": "Lucas Graciano",
+              "artist_id": "ce98f39c-7cdd-47e6-a520-6c50443bb4c2",
+              "mana_cost": "{R}{G}",
+              "name": "Blood",
+              "object": "card_face",
+              "oracle_text": "Target creature you control deals damage equal to its power to any target.
+Fuse (You may cast one or both halves of this card from your hand.)",
+              "type_line": "Sorcery",
+              "watermark": "gruul",
+            },
+          ],
+          "cmc": 7,
+          "collector_number": "128",
+          "color_identity": Array [
+            "B",
+            "G",
+            "R",
+          ],
+          "colors": Array [
+            "B",
+            "G",
+            "R",
+          ],
+          "digital": false,
+          "edhrec_rank": 19193,
+          "foil": true,
+          "frame": "2003",
+          "full_art": false,
+          "games": Array [
+            "mtgo",
+            "paper",
+          ],
+          "highres_image": true,
+          "id": "02b40fe4-901a-4832-8d52-a6bb5cc07b63",
+          "illustration_id": "5c13b10e-ae6b-4b28-89fa-16aa830f8267",
+          "image_uris": Object {
+            "art_crop": "https://img.scryfall.com/cards/art_crop/front/0/2/02b40fe4-901a-4832-8d52-a6bb5cc07b63.jpg?1562895503",
+            "border_crop": "https://img.scryfall.com/cards/border_crop/front/0/2/02b40fe4-901a-4832-8d52-a6bb5cc07b63.jpg?1562895503",
+            "large": "https://img.scryfall.com/cards/large/front/0/2/02b40fe4-901a-4832-8d52-a6bb5cc07b63.jpg?1562895503",
+            "normal": "https://img.scryfall.com/cards/normal/front/0/2/02b40fe4-901a-4832-8d52-a6bb5cc07b63.jpg?1562895503",
+            "png": "https://img.scryfall.com/cards/png/front/0/2/02b40fe4-901a-4832-8d52-a6bb5cc07b63.png?1562895503",
+            "small": "https://img.scryfall.com/cards/small/front/0/2/02b40fe4-901a-4832-8d52-a6bb5cc07b63.jpg?1562895503",
+          },
+          "lang": "en",
+          "layout": "split",
+          "legalities": Object {
+            "brawl": "not_legal",
+            "commander": "legal",
+            "duel": "legal",
+            "future": "not_legal",
+            "historic": "not_legal",
+            "legacy": "legal",
+            "modern": "legal",
+            "oldschool": "not_legal",
+            "pauper": "not_legal",
+            "penny": "not_legal",
+            "pioneer": "legal",
+            "standard": "not_legal",
+            "vintage": "legal",
+          },
+          "mana_cost": "{3}{B}{G} // {R}{G}",
+          "mtgo_id": 48514,
+          "multiverse_ids": Array [
+            368991,
+          ],
+          "name": "Flesh // Blood",
+          "nonfoil": true,
+          "object": "card",
+          "oracle_id": "0741151a-fec0-4ed3-9295-0d0f56d24165",
+          "oversized": false,
+          "prices": Object {
+            "eur": "0.23",
+            "tix": "0.02",
+            "usd": "0.16",
+            "usd_foil": "0.68",
+          },
+          "prints_search_uri": "https://api.scryfall.com/cards/search?order=released&q=oracleid%3A0741151a-fec0-4ed3-9295-0d0f56d24165&unique=prints",
+          "promo": false,
+          "purchase_uris": Object {
+            "cardhoarder": "https://www.cardhoarder.com/cards/48514?affiliate_id=scryfall&ref=card-profile&utm_campaign=affiliate&utm_medium=card&utm_source=scryfall",
+            "cardmarket": "https://www.cardmarket.com/en/Magic/Products/Singles/Dragons-Maze/Flesh-Blood?referrer=scryfall&utm_campaign=card_prices&utm_medium=text&utm_source=scryfall",
+            "tcgplayer": "https://shop.tcgplayer.com/product/productsearch?id=67919&partner=Scryfall&utm_campaign=affiliate&utm_medium=api&utm_source=scryfall",
+          },
+          "rarity": "rare",
+          "related_uris": Object {
+            "edhrec": "https://edhrec.com/route/?cc=Flesh+%2F%2F+Blood",
+            "gatherer": "https://gatherer.wizards.com/Pages/Card/Details.aspx?multiverseid=368991",
+            "mtgtop8": "https://mtgtop8.com/search?MD_check=1&SB_check=1&cards=Flesh+%2F%2F+Blood",
+            "tcgplayer_decks": "https://decks.tcgplayer.com/magic/deck/search?contains=Flesh+%2F%2F+Blood&page=1&partner=Scryfall&utm_campaign=affiliate&utm_medium=api&utm_source=scryfall",
+          },
+          "released_at": "2013-05-03",
+          "reprint": false,
+          "reserved": false,
+          "rulings_uri": "https://api.scryfall.com/cards/02b40fe4-901a-4832-8d52-a6bb5cc07b63/rulings",
+          "scryfall_set_uri": "https://scryfall.com/sets/dgm?utm_source=api",
+          "scryfall_uri": "https://scryfall.com/card/dgm/128/flesh-blood?utm_source=api",
+          "set": "dgm",
+          "set_name": "Dragon's Maze",
+          "set_search_uri": "https://api.scryfall.com/cards/search?order=set&q=e%3Adgm&unique=prints",
+          "set_type": "expansion",
+          "set_uri": "https://api.scryfall.com/sets/c8bd8520-cd98-45cd-b533-8d40c2087426",
+          "story_spotlight": false,
+          "tcgplayer_id": 67919,
+          "textless": false,
+          "type_line": "Sorcery // Sorcery",
+          "uri": "https://api.scryfall.com/cards/02b40fe4-901a-4832-8d52-a6bb5cc07b63",
+          "variation": false,
+        },
+        Object {
+          "_id": "Jace Beleren",
+          "_rev": "1-23ea7953438c4bbf84be98316a535044",
+          "artist": "Kev Walker",
+          "artist_ids": Array [
+            "f366a0ee-a0cd-466d-ba6a-90058c7a31a6",
+          ],
+          "booster": false,
+          "border_color": "black",
+          "card_back_id": "0aeebaf5-8c7d-4636-9e82-8c27447861f7",
+          "cmc": 3,
+          "collector_number": "1",
+          "color_identity": Array [
+            "U",
+          ],
+          "colors": Array [
+            "U",
+          ],
+          "digital": false,
+          "edhrec_rank": 866,
+          "foil": true,
+          "frame": "2015",
+          "full_art": false,
+          "games": Array [
+            "paper",
+          ],
+          "highres_image": true,
+          "id": "97956927-135f-47b0-8aef-cc63889eab5a",
+          "illustration_id": "00146337-02df-4b1e-976b-8d64af966dd8",
+          "image_uris": Object {
+            "art_crop": "https://img.scryfall.com/cards/art_crop/front/9/7/97956927-135f-47b0-8aef-cc63889eab5a.jpg?1562378464",
+            "border_crop": "https://img.scryfall.com/cards/border_crop/front/9/7/97956927-135f-47b0-8aef-cc63889eab5a.jpg?1562378464",
+            "large": "https://img.scryfall.com/cards/large/front/9/7/97956927-135f-47b0-8aef-cc63889eab5a.jpg?1562378464",
+            "normal": "https://img.scryfall.com/cards/normal/front/9/7/97956927-135f-47b0-8aef-cc63889eab5a.jpg?1562378464",
+            "png": "https://img.scryfall.com/cards/png/front/9/7/97956927-135f-47b0-8aef-cc63889eab5a.png?1562378464",
+            "small": "https://img.scryfall.com/cards/small/front/9/7/97956927-135f-47b0-8aef-cc63889eab5a.jpg?1562378464",
+          },
+          "lang": "en",
+          "layout": "normal",
+          "legalities": Object {
+            "brawl": "not_legal",
+            "commander": "legal",
+            "duel": "legal",
+            "future": "not_legal",
+            "historic": "not_legal",
+            "legacy": "legal",
+            "modern": "legal",
+            "oldschool": "not_legal",
+            "pauper": "not_legal",
+            "penny": "not_legal",
+            "pioneer": "not_legal",
+            "standard": "not_legal",
+            "vintage": "legal",
+          },
+          "loyalty": "3",
+          "mana_cost": "{1}{U}{U}",
+          "multiverse_ids": Array [
+            393851,
+          ],
+          "name": "Jace Beleren",
+          "nonfoil": false,
+          "object": "card",
+          "oracle_id": "cc2b6e58-2d6f-495e-95f3-9496105c4cba",
+          "oracle_text": "+2: Each player draws a card.
+−1: Target player draws a card.
+−10: Target player puts the top twenty cards of their library into their graveyard.",
+          "oversized": false,
+          "prices": Object {
+            "eur": null,
+            "tix": null,
+            "usd": null,
+            "usd_foil": "3.89",
+          },
+          "prints_search_uri": "https://api.scryfall.com/cards/search?order=released&q=oracleid%3Acc2b6e58-2d6f-495e-95f3-9496105c4cba&unique=prints",
+          "promo": false,
+          "purchase_uris": Object {
+            "cardhoarder": "https://www.cardhoarder.com/cards?affiliate_id=scryfall&data%5Bsearch%5D=Jace+Beleren&ref=card-profile&utm_campaign=affiliate&utm_medium=card&utm_source=scryfall",
+            "cardmarket": "https://www.cardmarket.com/en/Magic/Products/Search?referrer=scryfall&searchString=Jace+Beleren&utm_campaign=card_prices&utm_medium=text&utm_source=scryfall",
+            "tcgplayer": "https://shop.tcgplayer.com/product/productsearch?id=93796&partner=Scryfall&utm_campaign=affiliate&utm_medium=api&utm_source=scryfall",
+          },
+          "rarity": "mythic",
+          "related_uris": Object {
+            "edhrec": "https://edhrec.com/route/?cc=Jace+Beleren",
+            "gatherer": "https://gatherer.wizards.com/Pages/Card/Details.aspx?multiverseid=393851",
+            "mtgtop8": "https://mtgtop8.com/search?MD_check=1&SB_check=1&cards=Jace+Beleren",
+            "tcgplayer_decks": "https://decks.tcgplayer.com/magic/deck/search?contains=Jace+Beleren&page=1&partner=Scryfall&utm_campaign=affiliate&utm_medium=api&utm_source=scryfall",
+          },
+          "released_at": "2014-12-05",
+          "reprint": true,
+          "reserved": false,
+          "rulings_uri": "https://api.scryfall.com/cards/97956927-135f-47b0-8aef-cc63889eab5a/rulings",
+          "scryfall_set_uri": "https://scryfall.com/sets/jvc?utm_source=api",
+          "scryfall_uri": "https://scryfall.com/card/jvc/1/jace-beleren?utm_source=api",
+          "set": "jvc",
+          "set_name": "Duel Decks Anthology: Jace vs. Chandra",
+          "set_search_uri": "https://api.scryfall.com/cards/search?order=set&q=e%3Ajvc&unique=prints",
+          "set_type": "duel_deck",
+          "set_uri": "https://api.scryfall.com/sets/37832684-2fe0-4b06-842b-eec06e5a17cb",
+          "story_spotlight": false,
+          "tcgplayer_id": 93796,
+          "textless": false,
+          "type_line": "Legendary Planeswalker — Jace",
+          "uri": "https://api.scryfall.com/cards/97956927-135f-47b0-8aef-cc63889eab5a",
+          "variation": false,
+        },
+      ]
+    }
+    disableVirtualization={false}
+    getItem={[Function]}
+    getItemCount={[Function]}
+    horizontal={false}
+    initialNumToRender={10}
+    keyExtractor={[Function]}
+    maxToRenderPerBatch={10}
+    numColumns={1}
+    onContentSizeChange={[Function]}
+    onEndReachedThreshold={2}
+    onLayout={[Function]}
+    onMomentumScrollEnd={[Function]}
+    onScroll={[Function]}
+    onScrollBeginDrag={[Function]}
+    onScrollEndDrag={[Function]}
+    removeClippedSubviews={false}
+    renderItem={[Function]}
+    scrollEventThrottle={50}
+    stickyHeaderIndices={Array []}
+    style={
+      Object {
+        "paddingTop": 10,
+      }
+    }
+    updateCellsBatchingPeriod={50}
+    viewabilityConfigCallbackPairs={Array []}
+    windowSize={21}
+  >
+    <View>
+      <View
+        onLayout={[Function]}
+        style={null}
+      >
+        <View
+          style={
+            Object {
+              "borderBottomColor": "gray",
+              "borderBottomWidth": 1,
+              "padding": 10,
+            }
+          }
+        >
+          <Text
+            onPress={[Function]}
+            style={
+              Object {
+                "fontSize": 24,
+              }
+            }
+          >
+            Dungeon Master
+          </Text>
+        </View>
+      </View>
+      <View
+        onLayout={[Function]}
+        style={null}
+      >
+        <View
+          style={
+            Object {
+              "borderBottomColor": "gray",
+              "borderBottomWidth": 1,
+              "padding": 10,
+            }
+          }
+        >
+          <Text
+            onPress={[Function]}
+            style={
+              Object {
+                "fontSize": 24,
+              }
+            }
+          >
+            Flesh // Blood
+          </Text>
+        </View>
+      </View>
+      <View
+        onLayout={[Function]}
+        style={null}
+      >
+        <View
+          style={
+            Object {
+              "borderBottomColor": "gray",
+              "borderBottomWidth": 1,
+              "padding": 10,
+            }
+          }
+        >
+          <Text
+            onPress={[Function]}
+            style={
+              Object {
+                "fontSize": 24,
+              }
+            }
+          >
+            Jace Beleren
+          </Text>
+        </View>
+      </View>
+      <View
+        style={
+          Object {
+            "height": 0,
+          }
+        }
+      />
+    </View>
+  </RCTScrollView>
+</RCTSafeAreaView>
+`;
