@@ -2,8 +2,7 @@ import React, {useEffect} from 'react';
 import {useGlobal} from 'reactn';
 import {View, Text, SafeAreaView, Button, FlatList, Alert, StyleSheet} from 'react-native';
 import {Cards} from '../utils/db';
-// eslint-disable-next-line import/default
-import SearchBar from 'react-native-search-bar';
+import {SearchBar} from 'react-native-elements';
 
 const CardsScene = ({navigation}) => {
   // Add plus button to top

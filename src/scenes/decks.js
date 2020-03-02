@@ -1,5 +1,4 @@
-// eslint-disable-next-line import/default
-import SearchBar from 'react-native-search-bar';
+import {SearchBar} from 'react-native-elements';
 import React, {useEffect} from 'react';
 import {useGlobal} from 'reactn';
 import {View, Text, Button, FlatList, StyleSheet, SafeAreaView} from 'react-native';
