@@ -1,3 +1,4 @@
+
 // eslint-disable-next-line import/default
 import SearchBar from 'react-native-search-bar';
 import React from 'react';
@@ -15,3 +16,4 @@ const DeckManageScene = () => {
 };
 
 export default DeckManageScene;
+

@@ -1,0 +1,28 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly 1`] = `
+<RCTSafeAreaView
+  emulateUnlessSupported={true}
+  style={
+    Object {
+      "alignItems": "center",
+      "flex": 1,
+      "justifyContent": "center",
+    }
+  }
+>
+  <Image
+    source={
+      Object {
+        "uri": "https://img.scryfall.com/cards/border_crop/front/a/4/a4cf1827-2ce6-4592-b213-858dcb115ae0.jpg?1573039783",
+      }
+    }
+    style={
+      Object {
+        "height": 544,
+        "width": 384,
+      }
+    }
+  />
+</RCTSafeAreaView>
+`;
