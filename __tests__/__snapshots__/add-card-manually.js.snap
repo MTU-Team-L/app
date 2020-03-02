@@ -4,6 +4,7 @@ exports[`can add card 1`] = `
 Array [
   Object {
     "_id": "Disperse",
+    "_rev": "1-1ac49f882c114c68904c14c73095f484",
     "arena_id": 67780,
     "artist": "Ryan Yee",
     "artist_ids": Array [
