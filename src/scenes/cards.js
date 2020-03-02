@@ -2,6 +2,8 @@ import React, {useEffect} from 'react';
 import {useGlobal} from 'reactn';
 import {View, Text, SafeAreaView, Button, FlatList, Alert, StyleSheet} from 'react-native';
 import {Cards} from '../utils/db';
+// eslint-disable-next-line import/default
+import SearchBar from 'react-native-search-bar';
 
 const CardsScene = ({navigation}) => {
   // Add plus button to top
@@ -40,6 +42,11 @@ const CardsScene = ({navigation}) => {
 
   return (
     <SafeAreaView style={{flex: 1}}>
+      <SearchBar
+        placeholder="Search"
+        onChangeText={console.log}
+      />
+
       <FlatList
         data={cards}
         style={styles.flatlist}
