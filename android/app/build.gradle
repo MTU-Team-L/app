@@ -195,6 +195,14 @@ dependencies {
 }
 
 buildscript {
+  repositories {
+    google()
+    maven {
+      url 'https://maven.google.com'
+    }
+    jcenter()
+  }
+
   dependencies {
   // Add this line
   classpath 'com.google.gms:google-services:4.0.1' // <--- you might want to use different version
