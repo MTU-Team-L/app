@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "587184489382",
+    "firebase_url": "https://test-project-b59a9.firebaseio.com",
+    "project_id": "test-project-b59a9",
+    "storage_bucket": "test-project-b59a9.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:587184489382:android:2d3fcc931fa82b1ad7c567",
+        "android_client_info": {
+          "package_name": "com.digisol"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "587184489382-bcqlmkb9trknh29dfsdqhamh27m4ohfn.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCP5T6DNnSp4b2wzODEjwfY7AhCGAEKaPw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "587184489382-5iiv9ghrui1s5lj0cj5jlprs6guglvj3.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "587184489382-26a2ds8o7qfiqkhkps4b5rbr3f5np82g.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "org.maxisom.digisol"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
