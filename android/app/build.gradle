@@ -134,6 +134,7 @@ android {
         missingDimensionStrategy 'react-native-camera', 'mlkit'
         versionCode 1
         versionName "1.0"
+        multiDexEnabled true
     }
     splits {
         abi {
@@ -205,7 +206,7 @@ buildscript {
 
   dependencies {
   // Add this line
-  classpath 'com.google.gms:google-services:4.0.1' // <--- you might want to use different version
+  classpath 'com.google.gms:google-services:4.3.3' // <--- you might want to use different version
   }
 }
 

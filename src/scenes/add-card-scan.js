@@ -29,9 +29,7 @@ export default () => {
           buttonPositive: 'Ok',
           buttonNegative: 'Cancel'
         }}
-        onGoogleVisionBarcodesDetected={({barcodes}) => {
-          console.log(barcodes);
-        }}
+        onCameraReady={() => console.log('camera ready')}
         onTextRecognized={console.log}
       />
       <SafeAreaView/>
