@@ -1,5 +1,6 @@
 import React from 'react';
-import {Image, SafeAreaView, Button, Alert} from 'react-native';
+import {SafeAreaView, Button, Alert} from 'react-native';
+import {Image} from 'react-native-elements';
 import {Cards} from '../utils/db';
 
 export default ({route, navigation}) => {

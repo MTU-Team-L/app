@@ -1,5 +1,6 @@
 import React, {useState} from 'react';
-import {View, TextInput, Button, SafeAreaView, StyleSheet} from 'react-native';
+import {View, SafeAreaView} from 'react-native';
+import {Button, Input} from 'react-native-elements';
 import Toast from 'react-native-simple-toast';
 
 import addByName from '../utils/add-by-name';
@@ -10,6 +11,9 @@ const AddScene = () => {
   const handleAdd = async () => {
     const res = await addByName(text);
 
+    // Reset input
+    setText('');
+
     Toast.show(`${res.id} added!`, Toast.LONG);
   };
 
@@ -17,37 +21,20 @@ const AddScene = () => {
     <SafeAreaView style={{flex: 1, justifyContent: 'center', alignItems: 'center'}}>
       <View style={{flexDirection: 'row'}}>
 
-        <TextInput
-          style={styles.input}
+        <Input
           placeholder="Card name"
           value={text}
+          containerStyle={{flex: 0.8}}
           onChangeText={text => setText(text)}
         />
 
         <Button
           title="Add"
-          style={styles.button}
           onPress={handleAdd}
         />
       </View>
     </SafeAreaView>
   );
 };
-
-const styles = StyleSheet.create({
-  input: {
-    color: 'black',
-    borderBottomWidth: 1,
-    borderBottomColor: 'gray',
-    fontSize: 24,
-    height: 40,
-    width: 250
-  },
-  button: {
-    backgroundColor: 'blue',
-    color: 'black',
-    borderRadius: 10
-  }
-});
 
 export default AddScene;
