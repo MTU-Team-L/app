@@ -1,7 +1,6 @@
-import React, {useEffect} from 'react';
-import {useGlobal} from 'reactn';
+import React from 'react';
 import {View, Text, SafeAreaView, Button, FlatList, Alert, StyleSheet} from 'react-native';
-import {Cards} from '../utils/db';
+import {usePouch} from '../utils/db';
 import {SearchBar} from 'react-native-elements';
 
 const CardsScene = ({navigation}) => {
@@ -23,21 +22,7 @@ const CardsScene = ({navigation}) => {
     </View>
   );
 
-  const [cards, setCards] = useGlobal('cards');
-
-  // Run once on mount
-  useEffect(() => {
-    const fetchData = async () => {
-      let {rows: cards} = await Cards.allDocs({include_docs: true});
-
-      // Hoist
-      cards = cards.map(c => c.doc);
-
-      setCards(cards);
-    };
-
-    fetchData();
-  }, [setCards]);
+  const [cards] = usePouch('cards');
 
   return (
     <SafeAreaView style={{flex: 1}}>

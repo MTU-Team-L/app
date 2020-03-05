@@ -1,8 +1,7 @@
 import {SearchBar} from 'react-native-elements';
-import React, {useEffect} from 'react';
-import {useGlobal} from 'reactn';
+import React from 'react';
 import {View, Text, Button, FlatList, StyleSheet, SafeAreaView} from 'react-native';
-import {Decks} from '../utils/db';
+import {usePouch} from '../utils/db';
 
 // Deck View Scence
 const DecksScene = ({navigation}) => {
@@ -22,21 +21,7 @@ const DecksScene = ({navigation}) => {
     </View>
   );
 
-  const [decks, setDecks] = useGlobal('decks');
-
-  // Run once on mount
-  useEffect(() => {
-    const fetchData = async () => {
-      let {rows: decks} = await Decks.allDocs({include_docs: true});
-
-      // Hoist
-      decks = decks.map(d => d.doc);
-
-      setDecks(decks);
-    };
-
-    fetchData();
-  }, [setDecks]);
+  const [decks] = usePouch('decks');
 
   return (
     <SafeAreaView style={{flex: 1}}>

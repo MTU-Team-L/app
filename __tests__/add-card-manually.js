@@ -1,8 +1,8 @@
 import React from 'react';
 import {test, expect} from 'jest-without-globals';
-import {setGlobal, getGlobal} from 'reactn';
 import {render, fireEvent} from 'react-native-testing-library';
 import AddCardManually from '../src/scenes/add-card-manually';
+import {put} from '../__mocks__/pouchdb-react-native';
 import navigationMock from '../__mocks__/navigation-mock';
 
 test('renders correctly', async () => {
@@ -14,14 +14,12 @@ test('renders correctly', async () => {
 test('can add card', async () => {
   const {getByText, getByPlaceholder} = await render(<AddCardManually navigation={navigationMock}/>);
 
-  // Init global
-  setGlobal({
-    cards: []
-  });
+  // Set up mock
+  put.mockReturnValueOnce(Promise.resolve({id: 'Test-ID', ok: true, rev: '1-1ac49f882c114c68904c14c73095f484'}));
 
   await fireEvent.changeText(getByPlaceholder('Card name'), 'Disperse');
 
   await fireEvent.press(getByText('Add'));
 
-  expect(getGlobal().cards).toMatchSnapshot();
+  expect(put.mock.calls[0]).toMatchSnapshot();
 });
