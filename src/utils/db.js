@@ -7,8 +7,6 @@ export const Cards = new PouchDB('cards');
 
 export const Decks = new PouchDB('decks');
 
-export const AllCards = new PouchDB('all-cards');
-
 export const usePouch = name => {
   const [docs, setDocs] = useState([]);
   const docsRef = useRef(null);
