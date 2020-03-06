@@ -10,9 +10,13 @@ module.exports = {
       '|react-native-status-bar-height' +
       '|react-native-vector-icons' +
       '|react-native-ratings' +
+      '|react-native-sqlite-2' +
     ')/)'
   ],
   setupFilesAfterEnv: ['<rootDir>/__tests__/setup-tests.js'],
   testPathIgnorePatterns: ['<rootDir>/__tests__/setup-tests.js'],
-  collectCoverageFrom: ['src/**/*.js']
+  collectCoverageFrom: ['src/**/*.js'],
+  moduleNameMapper: {
+    '@craftzdog/pouchdb-core-react-native': '<rootDir>/__mocks__/pouchdb-core-react-native.js'
+  }
 };

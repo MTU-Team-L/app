@@ -2,7 +2,7 @@ import React from 'react';
 import {test, expect} from 'jest-without-globals';
 import {render, fireEvent} from 'react-native-testing-library';
 import AddCardManually from '../src/scenes/add-card-manually';
-import {put} from '../__mocks__/pouchdb-react-native';
+import {put} from '../__mocks__/pouchdb-core-react-native';
 import navigationMock from '../__mocks__/navigation-mock';
 
 test('renders correctly', async () => {

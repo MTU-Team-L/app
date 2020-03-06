@@ -3,6 +3,8 @@ import seeds from './seed-data.json';
 
 export const mockPouchDB = jest.fn();
 
+mockPouchDB.plugin = jest.fn().mockImplementation(() => mockPouchDB);
+
 export const put = jest.fn();
 
 const mock = mockPouchDB.mockImplementation(db => {

@@ -1,8 +1,12 @@
+import './utils/polyfill';
 import 'react-native-gesture-handler';
-import React from 'react';
+import React, {useState} from 'react';
+import {SafeAreaView, ActivityIndicator} from 'react-native';
 import {NavigationContainer} from '@react-navigation/native';
 import {createStackNavigator} from '@react-navigation/stack';
 import {createBottomTabNavigator} from '@react-navigation/bottom-tabs';
+
+import init from './utils/init';
 
 import CardsScene from './scenes/cards';
 import CardDetails from './scenes/card-details';
@@ -34,11 +38,28 @@ const DecksStackScreen = () => (
   </DecksStack.Navigator>
 );
 
-export default () => (
-  <NavigationContainer>
-    <Tab.Navigator>
-      <Tab.Screen name="Cards" component={CardsStackScreen}/>
-      <Tab.Screen name="Decks" component={DecksStackScreen}/>
-    </Tab.Navigator>
-  </NavigationContainer>
-);
+export default () => {
+  const [isLoading, loading] = useState(true);
+
+  // Init any required functions/files/etc
+  init().then(() => {
+    loading(false);
+  });
+
+  if (isLoading) {
+    return (
+      <SafeAreaView style={{flex: 1, justifyContent: 'center', alignItems: 'center'}}>
+        <ActivityIndicator size="large" color="#0000ff"/>
+      </SafeAreaView>
+    );
+  }
+
+  return (
+    <NavigationContainer>
+      <Tab.Navigator>
+        <Tab.Screen name="Cards" component={CardsStackScreen}/>
+        <Tab.Screen name="Decks" component={DecksStackScreen}/>
+      </Tab.Navigator>
+    </NavigationContainer>
+  );
+};
