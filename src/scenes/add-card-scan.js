@@ -21,8 +21,7 @@ export default ({navigation}) => {
     }, 2000);
   };
 
-  const onTextRecognized = async ({textBlocks}) => {
-    console.log(textBlocks);
+  const onTextRecognized = ({textBlocks}) => {
     // Find most top-left text block
     let minX = Infinity;
     let minY = Infinity;
@@ -45,31 +44,39 @@ export default ({navigation}) => {
       // Search for card
       const res = [];
 
-      Scry.Cards.search(`name:${str} lang:en`).on('data', card => res.push(card)).on('end', async () => {
-        if (res.length > 2 || res.length === 0) {
-          return;
-        }
+      return new Promise((resolve, reject) => {
+        Scry.Cards.search(`name:${str} lang:en`).on('data', card => res.push(card)).on('end', async () => {
+          try {
+            if (res.length > 2 || res.length === 0) {
+              resolve();
+            }
 
-        const card = res[0];
+            const card = res[0];
 
-        if (lastAdd && card.id === lastAdd._id) {
-          return;
-        }
+            if (lastAdd && card.id === lastAdd._id) {
+              return;
+            }
 
-        // Test if we currently have card in database
-        try {
-          await Cards.get(card.id);
+            // Test if we currently have card in database
+            try {
+              await Cards.get(card.id);
 
-          showAlert('Ignoring duplicate');
-        } catch (_) {
-          card._id = card.id;
-          delete card.id;
+              showAlert('Ignoring duplicate');
+            } catch (_) {
+              card._id = card.id;
+              delete card.id;
 
-          const doc = await Cards.put(card);
-          setLastAdd({_id: doc.id, _rev: doc.rev, ...card});
+              const doc = await Cards.put(card);
+              setLastAdd({_id: doc.id, _rev: doc.rev, ...card});
 
-          Vibration.vibrate();
-        }
+              Vibration.vibrate();
+            }
+          } catch (error) {
+            reject(error);
+          }
+
+          resolve();
+        });
       });
     }
   };

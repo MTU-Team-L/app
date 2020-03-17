@@ -1,0 +1,163 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`can add card 1`] = `
+Array [
+  Object {
+    "_id": "97956927-135f-47b0-8aef-cc63889eab5a",
+    "artist": "Kev Walker",
+    "artist_ids": Array [
+      "f366a0ee-a0cd-466d-ba6a-90058c7a31a6",
+    ],
+    "booster": false,
+    "border_color": "black",
+    "card_back_id": "0aeebaf5-8c7d-4636-9e82-8c27447861f7",
+    "cmc": 3,
+    "collector_number": "1",
+    "color_identity": Array [
+      "U",
+    ],
+    "colors": Array [
+      "U",
+    ],
+    "digital": false,
+    "edhrec_rank": 884,
+    "foil": true,
+    "frame": "2015",
+    "full_art": false,
+    "games": Array [
+      "paper",
+    ],
+    "highres_image": true,
+    "illustration_id": "00146337-02df-4b1e-976b-8d64af966dd8",
+    "image_uris": Object {
+      "art_crop": "https://img.scryfall.com/cards/art_crop/front/9/7/97956927-135f-47b0-8aef-cc63889eab5a.jpg?1562378464",
+      "border_crop": "https://img.scryfall.com/cards/border_crop/front/9/7/97956927-135f-47b0-8aef-cc63889eab5a.jpg?1562378464",
+      "large": "https://img.scryfall.com/cards/large/front/9/7/97956927-135f-47b0-8aef-cc63889eab5a.jpg?1562378464",
+      "normal": "https://img.scryfall.com/cards/normal/front/9/7/97956927-135f-47b0-8aef-cc63889eab5a.jpg?1562378464",
+      "png": "https://img.scryfall.com/cards/png/front/9/7/97956927-135f-47b0-8aef-cc63889eab5a.png?1562378464",
+      "small": "https://img.scryfall.com/cards/small/front/9/7/97956927-135f-47b0-8aef-cc63889eab5a.jpg?1562378464",
+    },
+    "lang": "en",
+    "layout": "normal",
+    "legalities": Object {
+      "brawl": "not_legal",
+      "commander": "legal",
+      "duel": "legal",
+      "future": "not_legal",
+      "historic": "not_legal",
+      "legacy": "legal",
+      "modern": "legal",
+      "oldschool": "not_legal",
+      "pauper": "not_legal",
+      "penny": "not_legal",
+      "pioneer": "not_legal",
+      "standard": "not_legal",
+      "vintage": "legal",
+    },
+    "loyalty": "3",
+    "mana_cost": "{1}{U}{U}",
+    "multiverse_ids": Array [
+      393851,
+    ],
+    "name": "Jace Beleren",
+    "nonfoil": false,
+    "object": "card",
+    "oracle_id": "cc2b6e58-2d6f-495e-95f3-9496105c4cba",
+    "oracle_text": "+2: Each player draws a card.
+−1: Target player draws a card.
+−10: Target player puts the top twenty cards of their library into their graveyard.",
+    "oversized": false,
+    "prices": Object {
+      "eur": null,
+      "tix": null,
+      "usd": null,
+      "usd_foil": "3.94",
+    },
+    "prints_search_uri": "https://api.scryfall.com/cards/search?order=released&q=oracleid%3Acc2b6e58-2d6f-495e-95f3-9496105c4cba&unique=prints",
+    "promo": false,
+    "purchase_uris": Object {
+      "cardhoarder": "https://www.cardhoarder.com/cards?affiliate_id=scryfall&data%5Bsearch%5D=Jace+Beleren&ref=card-profile&utm_campaign=affiliate&utm_medium=card&utm_source=scryfall",
+      "cardmarket": "https://www.cardmarket.com/en/Magic/Products/Search?referrer=scryfall&searchString=Jace+Beleren&utm_campaign=card_prices&utm_medium=text&utm_source=scryfall",
+      "tcgplayer": "https://shop.tcgplayer.com/product/productsearch?id=93796&partner=Scryfall&utm_campaign=affiliate&utm_medium=api&utm_source=scryfall",
+    },
+    "rarity": "mythic",
+    "related_uris": Object {
+      "edhrec": "https://edhrec.com/route/?cc=Jace+Beleren",
+      "gatherer": "https://gatherer.wizards.com/Pages/Card/Details.aspx?multiverseid=393851",
+      "mtgtop8": "https://mtgtop8.com/search?MD_check=1&SB_check=1&cards=Jace+Beleren",
+      "tcgplayer_decks": "https://decks.tcgplayer.com/magic/deck/search?contains=Jace+Beleren&page=1&partner=Scryfall&utm_campaign=affiliate&utm_medium=api&utm_source=scryfall",
+    },
+    "released_at": "2014-12-05",
+    "reprint": true,
+    "reserved": false,
+    "rulings_uri": "https://api.scryfall.com/cards/97956927-135f-47b0-8aef-cc63889eab5a/rulings",
+    "scryfall_set_uri": "https://scryfall.com/sets/jvc?utm_source=api",
+    "scryfall_uri": "https://scryfall.com/card/jvc/1/jace-beleren?utm_source=api",
+    "set": "jvc",
+    "set_name": "Duel Decks Anthology: Jace vs. Chandra",
+    "set_search_uri": "https://api.scryfall.com/cards/search?order=set&q=e%3Ajvc&unique=prints",
+    "set_type": "duel_deck",
+    "set_uri": "https://api.scryfall.com/sets/37832684-2fe0-4b06-842b-eec06e5a17cb",
+    "story_spotlight": false,
+    "tcgplayer_id": 93796,
+    "textless": false,
+    "type_line": "Legendary Planeswalker — Jace",
+    "uri": "https://api.scryfall.com/cards/97956927-135f-47b0-8aef-cc63889eab5a",
+    "variation": false,
+  },
+]
+`;
+
+exports[`renders correctly 1`] = `
+<View
+  style={
+    Object {
+      "alignItems": "center",
+      "backgroundColor": "black",
+      "flex": 1,
+      "flexDirection": "column",
+      "justifyContent": "center",
+    }
+  }
+>
+  <View />
+  <View
+    style={
+      Object {
+        "borderColor": "rgba(0, 255, 13, 1)",
+        "borderRadius": 8,
+        "borderWidth": 2,
+        "height": 324,
+        "marginLeft": "auto",
+        "marginRight": "auto",
+        "position": "absolute",
+        "width": 224,
+      }
+    }
+  >
+    <View
+      style={
+        Object {
+          "borderColor": "rgba(0, 255, 13, 1)",
+          "borderRadius": 8,
+          "borderWidth": 2,
+          "height": 30,
+          "marginLeft": "auto",
+          "marginRight": "auto",
+          "marginTop": 5,
+          "width": 200,
+        }
+      }
+    />
+  </View>
+  <View
+    style={
+      Object {
+        "flex": 1,
+      }
+    }
+  />
+  <View />
+  <View />
+</View>
+`;

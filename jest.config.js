@@ -11,6 +11,7 @@ module.exports = {
       '|react-native-vector-icons' +
       '|react-native-ratings' +
       '|react-native-sqlite-2' +
+      '|react-native-camera' +
     ')/)'
   ],
   setupFilesAfterEnv: ['<rootDir>/__tests__/setup-tests.js'],
