@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useState} from 'react';
 import {SafeAreaView, Button, FlatList, Alert} from 'react-native';
 import {ListItem, SearchBar} from 'react-native-elements';
 import {usePouch} from '../utils/db';
@@ -16,12 +16,14 @@ const CardsScene = ({navigation}) => {
   });
 
   const [cards] = usePouch('cards');
-
+  const [searchValue, setSearchValue] = useState('');
   return (
     <SafeAreaView style={{flex: 1}}>
       <SearchBar
         placeholder="Search"
-        onChangeText={console.log}
+        value={searchValue}
+        onChangeText={e => setSearchValue(e)}
+
       />
 
       <FlatList
