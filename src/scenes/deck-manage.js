@@ -3,8 +3,10 @@ import React, {useEffect} from 'react';
 import {View, Text, FlatList, StyleSheet, SafeAreaView} from 'react-native';
 import {Cards} from '../utils/db';
 import {useGlobal} from 'reactn';
+import deckCardAdd from '../utils/deck-card-add';
 
-const DeckManageScene = ({navigation}) => {
+const DeckManageScene = ({route}) => {
+  // Console.log(route.params);
   /* Const handleAdd = async () => {
     const res = await deckcreate(text);
     console.log(res);
@@ -12,6 +14,7 @@ const DeckManageScene = ({navigation}) => {
   }; */
 
   // Row for list view
+
   const Item = ({name, onPress}) => (
     <View style={styles.row}>
       <Text style={styles.rowContent} onPress={onPress}>{name}</Text>
@@ -43,7 +46,7 @@ const DeckManageScene = ({navigation}) => {
         data={cards}
         style={styles.flatlist}
         renderItem={({item}) => (
-          <Item name={item.name} onPress={() => navigation.navigate('Card-Details', item)}/>
+          <Item name={item.name} onPress={() => deckCardAdd(route.params, item)}/>
         )}
         keyExtractor={item => item._id}
       />

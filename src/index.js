@@ -12,6 +12,7 @@ import AddCardScan from './scenes/add-card-scan';
 import DecksScene from './scenes/decks';
 import DeckAdd from './scenes/decks-add';
 import DeckManage from './scenes/deck-manage';
+import DeckView from './scenes/deck-view';
 
 const Tab = createBottomTabNavigator();
 const CardsStack = createStackNavigator();
@@ -32,6 +33,7 @@ const DecksStackScreen = () => (
     <DecksStack.Screen name="Decks" component={DecksScene}/>
     <DecksStack.Screen name="Deck-Add" component={DeckAdd} options={{title: 'Create a Deck'}}/>
     <DecksStack.Screen name="Deck-Manage" component={DeckManage} options={{title: 'Add a Card to a Deck'}}/>
+    <DecksStack.Screen name="Deck-View" component={DeckView} options={{title: 'View Cards in Deck'}}/>
   </DecksStack.Navigator>
 );
 

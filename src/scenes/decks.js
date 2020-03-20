@@ -27,7 +27,7 @@ const DecksScene = ({navigation}) => {
       <FlatList
         data={decks}
         renderItem={({item}) => (
-          <ListItem bottomDivider chevron title={item._id} onPress={() => navigation.navigate('Deck-Manage', item._id)}/>
+          <ListItem bottomDivider chevron title={item._id} onPress={() => navigation.navigate('Deck-View', item)}/>
         )}
         keyExtractor={item => item._id}
       />
