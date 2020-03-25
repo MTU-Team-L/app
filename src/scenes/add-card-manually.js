@@ -9,12 +9,12 @@ const AddScene = () => {
   const [text, setText] = useState('');
 
   const handleAdd = async () => {
-    const res = await addByName(text);
+    const card = await addByName(text);
 
     // Reset input
     setText('');
 
-    Toast.show(`${res.id} added!`, Toast.LONG);
+    Toast.show(`${card.id} added!`, Toast.LONG);
   };
 
   return (

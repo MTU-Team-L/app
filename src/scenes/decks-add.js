@@ -8,9 +8,9 @@ const DeckAdd = () => {
   const [text, setText] = useState('');
 
   const handleAdd = async () => {
-    const res = await deckcreate(text);
-    console.log(res);
-    Toast.show(`${res.id} added!`, Toast.LONG);
+    const deck = await deckcreate(text);
+    console.log(deck);
+    Toast.show(`${deck.id} added!`, Toast.LONG);
   };
 
   return (

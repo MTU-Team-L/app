@@ -22,7 +22,7 @@ const CardsScene = ({navigation}) => {
       <SearchBar
         placeholder="Search"
         value={searchValue}
-        onChangeText={e => setSearchValue(e)}
+        onChangeText={text => setSearchValue(text)}
 
       />
 

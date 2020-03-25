@@ -1,5 +1,4 @@
 import React from 'react';
-import {EventEmitter} from 'events';
 import {test, expect, jest} from 'jest-without-globals';
 import {render} from 'react-native-testing-library';
 import {triggerTextRecognition} from '../__mocks__/react-native-camera';
@@ -23,18 +22,16 @@ test('can add card', async () => {
   navigationMock.isFocused.mockReturnValueOnce(true);
   jest.useFakeTimers();
 
-  const fakeEventEmitter = new EventEmitter();
-
   scryfall.Cards.search.mockImplementation(query => {
-    expect(query).toBe('name:Jace Beleren lang:en');
-    return fakeEventEmitter;
+    expect(query).toBe('"Jace Beleren" lang:en');
+    return {waitForAll: () => Promise.resolve([mockCardResponse])};
   });
+
+  put.mockImplementation(doc => Promise.resolve({...doc, _rev: 'mock-rev'}));
 
   await render(<AddCardScan navigation={navigationMock}/>);
 
-  triggerTextRecognition();
-  fakeEventEmitter.emit('data', mockCardResponse);
-  fakeEventEmitter.emit('end');
+  await triggerTextRecognition();
 
   expect(put.mock.calls[0]).toMatchSnapshot();
 });
