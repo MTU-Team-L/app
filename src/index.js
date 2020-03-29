@@ -21,7 +21,7 @@ const DecksStack = createStackNavigator();
 const CardsStackScreen = () => (
   <CardsStack.Navigator>
     <CardsStack.Screen name="Cards" component={CardsScene}/>
-    <CardsStack.Screen name="Card-Details" component={CardDetails} options={({route}) => ({title: route.params.name})}/>
+    <CardsStack.Screen name="Card-Details" component={CardDetails} options={{title: ''}}/>
     <CardsStack.Screen name="Add-Card-Manually" component={AddCardManually} options={{title: 'Add a Card'}}/>
     <CardsStack.Screen name="Add-Card-Scan" component={AddCardScan} options={{title: 'Add a Card'}}/>
 

@@ -12,6 +12,7 @@ module.exports = {
       '|react-native-ratings' +
       '|react-native-sqlite-2' +
       '|react-native-camera' +
+      '|react-native-lightbox' +
     ')/)'
   ],
   setupFilesAfterEnv: ['<rootDir>/__tests__/setup-tests.js'],
