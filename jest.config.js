@@ -19,6 +19,7 @@ module.exports = {
   testPathIgnorePatterns: ['<rootDir>/__tests__/setup-tests.js'],
   collectCoverageFrom: ['src/**/*.js'],
   moduleNameMapper: {
-    '@craftzdog/pouchdb-core-react-native': '<rootDir>/__mocks__/pouchdb-core-react-native.js'
+    '@craftzdog/pouchdb-core-react-native': '<rootDir>/__mocks__/pouchdb-core-react-native.js',
+    '\\.svg': '<rootDir>/__mocks__/svg-mock.js'
   }
 };
