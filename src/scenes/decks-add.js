@@ -4,7 +4,7 @@ import {Button, Input} from 'react-native-elements';
 import Toast from 'react-native-simple-toast';
 import deckcreate from '../utils/deck-create';
 
-const DeckAdd = () => {
+const DeckAdd = ({navigation}) => {
   const [text, setText] = useState('');
 
   const handleAdd = async () => {
@@ -26,8 +26,12 @@ const DeckAdd = () => {
 
         <Button
           title="Add"
-          onPress={handleAdd}
+          onPress={() => {
+            navigation.navigate('Decks');
+            handleAdd();
+          }}
         />
+
       </View>
     </SafeAreaView>
   );

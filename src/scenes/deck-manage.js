@@ -5,7 +5,7 @@ import {Cards} from '../utils/db';
 import {useGlobal} from 'reactn';
 import deckCardAdd from '../utils/deck-card-add';
 
-const DeckManageScene = ({route}) => {
+const DeckManageScene = ({route, navigation}) => {
   // Console.log(route.params);
   /* Const handleAdd = async () => {
     const res = await deckcreate(text);
@@ -46,7 +46,11 @@ const DeckManageScene = ({route}) => {
         data={cards}
         style={styles.flatlist}
         renderItem={({item}) => (
-          <Item name={item.name} onPress={() => deckCardAdd(route.params, item)}/>
+          <Item
+            name={item.name} onPress={() => {
+              deckCardAdd(route.params, item);
+              navigation.navigate('Deck-View');
+            }}/>
         )}
         keyExtractor={item => item._id}
       />

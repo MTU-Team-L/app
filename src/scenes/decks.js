@@ -9,7 +9,7 @@ const DecksScene = ({navigation}) => {
   navigation.setOptions({
     headerRight: () => (
       <Button
-        title="Add" onPress={() => navigation.navigate('Deck-Add')}
+        title="Add" onPress={() => navigation.navigate('Deck-Add', navigation)}
 
       />
     )

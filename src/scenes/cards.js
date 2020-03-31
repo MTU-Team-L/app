@@ -9,8 +9,10 @@ const CardsScene = ({navigation}) => {
     headerRight: () => (
       <Button
         title="Add" onPress={() => Alert.alert('Add a card', 'I want to', [
+          // {text: 'Cancel', onPress: () => console.log('Cancel Pressed'), style: 'cancel'},
           {text: 'Add it manually', onPress: () => navigation.navigate('Add-Card-Manually')},
           {text: 'Scan it with my camera', onPress: () => navigation.navigate('Add-Card-Scan')}
+
         ])}/>
     )
   });

@@ -1,6 +1,7 @@
 import React from 'react';
 import {SearchBar, ListItem} from 'react-native-elements';
-import {Button, SafeAreaView, FlatList} from 'react-native';
+import {Button, SafeAreaView, FlatList, Alert} from 'react-native';
+import {Decks} from '../utils/db';
 
 // Deck View Scence
 const DecksScene = ({route, navigation}) => {
@@ -8,11 +9,25 @@ const DecksScene = ({route, navigation}) => {
   console.log(t);
   navigation.setOptions({
     headerRight: () => (
-      <Button
-        title="Add" onPress={() => navigation.navigate('Deck-Manage', route.params)}
 
-      />
+      <Button
+        title="Manage" onPress={() => Alert.alert('What would you like to do?', '', [
+          {
+            text: 'Add a card', onPress: async () => {
+              navigation.navigate('Deck-Manage', route.params, navigation);
+            }
+          },
+          {
+            text: 'Delete this deck', onPress: async () => {
+              await Decks.remove(route.params);
+              navigation.navigate('Decks');
+            }
+          },
+          {text: 'Cancel', onPress: () => console.log('Cancel Pressed'), style: 'cancel'}
+
+        ])}/>
     )
+
   });
 
   return (
