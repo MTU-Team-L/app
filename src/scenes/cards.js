@@ -9,7 +9,7 @@ const CardsScene = ({navigation}) => {
     headerRight: () => (
       <Button
         title="Add" onPress={() => Alert.alert('Add a card', 'I want to', [
-          // {text: 'Cancel', onPress: () => console.log('Cancel Pressed'), style: 'cancel'},
+          {text: 'Cancel', style: 'cancel'},
           {text: 'Add it manually', onPress: () => navigation.navigate('Add-Card-Manually')},
           {text: 'Scan it with my camera', onPress: () => navigation.navigate('Add-Card-Scan')}
 
@@ -17,15 +17,27 @@ const CardsScene = ({navigation}) => {
     )
   });
 
-  const [cards] = usePouch('cards');
+  const [cards, setCardsFilter] = usePouch('cards');
   const [searchValue, setSearchValue] = useState('');
+
+  const handleSearchInput = text => {
+    setSearchValue(text);
+
+    setCardsFilter({
+      selector: {
+        name: {
+          $regex: new RegExp(`.*${text}.*`, 'i') // Anything can appear before/after text, (i)gnore case
+        }
+      }
+    });
+  };
+
   return (
     <SafeAreaView style={{flex: 1}}>
       <SearchBar
         placeholder="Search"
         value={searchValue}
-        onChangeText={text => setSearchValue(text)}
-
+        onChangeText={handleSearchInput}
       />
 
       <FlatList

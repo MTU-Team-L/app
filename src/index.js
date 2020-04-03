@@ -34,6 +34,7 @@ const DecksStackScreen = () => (
     <DecksStack.Screen name="Deck-Add" component={DeckAdd} options={{title: 'Create a Deck'}}/>
     <DecksStack.Screen name="Deck-Manage" component={DeckManage} options={{title: 'Add a Card to a Deck'}}/>
     <DecksStack.Screen name="Deck-View" component={DeckView} options={{title: 'View Cards in Deck'}}/>
+    <DecksStack.Screen name="Card-Details" component={CardDetails} options={{title: ''}}/>
   </DecksStack.Navigator>
 );
 

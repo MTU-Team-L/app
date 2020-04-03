@@ -28,6 +28,7 @@ exports[`renders correctly 1`] = `
         <View
           accessible={true}
           focusable={true}
+          isTVSelectable={true}
           onClick={[Function]}
           onResponderGrant={[Function]}
           onResponderMove={[Function]}
@@ -35,6 +36,7 @@ exports[`renders correctly 1`] = `
           onResponderTerminate={[Function]}
           onResponderTerminationRequest={[Function]}
           onStartShouldSetResponder={[Function]}
+          style={null}
         >
           <View
             accessibilityIgnoresInvertColors={true}
@@ -313,6 +315,7 @@ exports[`renders correctly 1`] = `
           <View
             accessible={true}
             focusable={true}
+            isTVSelectable={true}
             onClick={[Function]}
             onResponderGrant={[Function]}
             onResponderMove={[Function]}
