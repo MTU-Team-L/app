@@ -1,12 +1,10 @@
 import React from 'react';
 import {SearchBar, ListItem} from 'react-native-elements';
 import {Button, SafeAreaView, FlatList, Alert} from 'react-native';
-import {Decks} from '../utils/db';
+import {usePouch, Decks} from '../utils/db';
 
 // Deck View Scence
 const DecksScene = ({route, navigation}) => {
-  const t = route.params.cardList;
-  console.log(t);
   navigation.setOptions({
     headerRight: () => (
 
@@ -29,6 +27,14 @@ const DecksScene = ({route, navigation}) => {
     )
 
   });
+  const [decks] = usePouch('decks');
+  const thisCard = decks.filter(d => d._id === route.params._id);
+  let s;
+  try {
+    s = thisCard[0].cardList;
+  } catch {
+    s = thisCard.cardList;
+  }
 
   return (
     <SafeAreaView style={{flex: 1}}>
@@ -38,7 +44,7 @@ const DecksScene = ({route, navigation}) => {
       />
 
       <FlatList
-        data={t}
+        data={s}
 
         renderItem={({item}) => (
           <ListItem bottomDivider chevron title={item.name} onPress={() => navigation.navigate('Card-Details', item)}/>
