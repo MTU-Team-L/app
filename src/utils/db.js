@@ -9,6 +9,8 @@ export const Decks = new PouchDB('decks');
 
 export const usePouch = name => {
   const [docs, setDocs] = useState([]);
+  const [findQuery, setFindQuery] = useState({});
+
   const docsRef = useRef(null);
 
   // Must use ref for updating: https://stackoverflow.com/a/55156813/12638523
@@ -37,12 +39,17 @@ export const usePouch = name => {
     const db = new PouchDB(name);
 
     // Load docs for first time
-    db.allDocs({include_docs: true}).then(({rows}) => {
+    if (Object.keys(findQuery).length === 0) {
+      db.allDocs({include_docs: true}).then(({rows}) => {
       // Hoist
-      const d = rows.map(r => r.doc);
-
-      setDocs(d);
-    });
+        setDocs(rows.map(r => r.doc));
+      });
+    } else {
+      db.find(findQuery).then(({docs}) => {
+      // Hoist
+        setDocs(docs);
+      });
+    }
 
     const changes = db.changes({
       since: 'now',
@@ -54,7 +61,7 @@ export const usePouch = name => {
       changes.cancel();
       db.close();
     };
-  }, [name]);
+  }, [name, findQuery]);
 
-  return [docs];
+  return [docs, setFindQuery];
 };

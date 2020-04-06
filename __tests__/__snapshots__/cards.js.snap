@@ -529,6 +529,7 @@ Fuse (You may cast one or both halves of this card from your hand.)",
     initialNumToRender={10}
     keyExtractor={[Function]}
     maxToRenderPerBatch={10}
+    numColumns={1}
     onContentSizeChange={[Function]}
     onEndReachedThreshold={2}
     onLayout={[Function]}
@@ -552,6 +553,7 @@ Fuse (You may cast one or both halves of this card from your hand.)",
         <View
           accessible={true}
           focusable={true}
+          isTVSelectable={true}
           onClick={[Function]}
           onResponderGrant={[Function]}
           onResponderMove={[Function]}
@@ -559,6 +561,7 @@ Fuse (You may cast one or both halves of this card from your hand.)",
           onResponderTerminate={[Function]}
           onResponderTerminationRequest={[Function]}
           onStartShouldSetResponder={[Function]}
+          style={null}
         >
           <View
             style={
@@ -715,6 +718,7 @@ Fuse (You may cast one or both halves of this card from your hand.)",
         <View
           accessible={true}
           focusable={true}
+          isTVSelectable={true}
           onClick={[Function]}
           onResponderGrant={[Function]}
           onResponderMove={[Function]}
@@ -722,6 +726,7 @@ Fuse (You may cast one or both halves of this card from your hand.)",
           onResponderTerminate={[Function]}
           onResponderTerminationRequest={[Function]}
           onStartShouldSetResponder={[Function]}
+          style={null}
         >
           <View
             style={
@@ -878,6 +883,7 @@ Fuse (You may cast one or both halves of this card from your hand.)",
         <View
           accessible={true}
           focusable={true}
+          isTVSelectable={true}
           onClick={[Function]}
           onResponderGrant={[Function]}
           onResponderMove={[Function]}
@@ -885,6 +891,7 @@ Fuse (You may cast one or both halves of this card from your hand.)",
           onResponderTerminate={[Function]}
           onResponderTerminationRequest={[Function]}
           onStartShouldSetResponder={[Function]}
+          style={null}
         >
           <View
             style={
