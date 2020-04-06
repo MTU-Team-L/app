@@ -529,6 +529,7 @@ Fuse (You may cast one or both halves of this card from your hand.)",
     initialNumToRender={10}
     keyExtractor={[Function]}
     maxToRenderPerBatch={10}
+    numColumns={1}
     onContentSizeChange={[Function]}
     onEndReachedThreshold={2}
     onLayout={[Function]}
