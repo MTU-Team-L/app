@@ -38,6 +38,8 @@ target 'digisol' do
   'TextDetector'
 ]
 
+  pod 'react-native-splash-screen', :path => '../node_modules/react-native-splash-screen'
+
   target 'digisolTests' do
     inherit! :search_paths
     # Pods for testing
