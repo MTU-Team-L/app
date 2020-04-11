@@ -1,38 +1,60 @@
-import React, {useState} from 'react';
-import {View, SafeAreaView} from 'react-native';
-import {Button, Input} from 'react-native-elements';
+import React, {useState, useRef, useEffect} from 'react';
+import {SafeAreaView, FlatList} from 'react-native';
+import {ListItem, SearchBar} from 'react-native-elements';
 import Toast from 'react-native-simple-toast';
+import * as Scry from 'scryfall-sdk';
 
 import addByName from '../utils/add-by-name';
 
 const AddScene = () => {
   const [text, setText] = useState('');
+  const [cards, setCards] = useState([]);
+  const searchInput = useRef(null);
 
-  const handleAdd = async () => {
-    const card = await addByName(text);
+  const handleAdd = async cardName => {
+    try {
+      const card = await addByName(cardName);
 
-    // Reset input
-    setText('');
+      // Reset input
+      setText('');
+      setCards([]);
 
-    Toast.show(`${card.id} added!`, Toast.LONG);
+      Toast.show(`${card.id} added!`, Toast.LONG);
+
+      searchInput.current.focus();
+    } catch (_) {
+      Toast.show('Card already exists!', Toast.LONG);
+    }
   };
 
+  const handleSearchInput = async t => {
+    setText(t);
+
+    const suggestions = await Scry.Cards.autoCompleteName(t);
+
+    setCards(suggestions);
+  };
+
+  // Focus search on load
+  useEffect(() => {
+    searchInput.current.focus();
+  }, []);
+
   return (
-    <SafeAreaView style={{flex: 1, justifyContent: 'center', alignItems: 'center'}}>
-      <View style={{flexDirection: 'row'}}>
+    <SafeAreaView style={{flex: 1}}>
+      <SearchBar
+        ref={s => {
+          searchInput.current = s;
+        }} placeholder="Card name…" value={text}
+        onChangeText={handleSearchInput}/>
 
-        <Input
-          placeholder="Card name"
-          value={text}
-          containerStyle={{flex: 0.8}}
-          onChangeText={text => setText(text)}
-        />
-
-        <Button
-          title="Add"
-          onPress={handleAdd}
-        />
-      </View>
+      <FlatList
+        data={cards}
+        renderItem={({item}) => (
+          <ListItem bottomDivider chevron title={item} onPress={() => handleAdd(item)}/>
+        )}
+        keyExtractor={item => item}
+      />
     </SafeAreaView>
   );
 };
