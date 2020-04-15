@@ -53,7 +53,7 @@ export default ({navigation}) => {
       try {
         await Cards.get(card.id);
 
-        if (lastAdd._id !== card.id) {
+        if (!lastAdd || lastAdd._id !== card.id) {
           showAlert('Ignoring duplicate');
         }
       } catch (_) {
