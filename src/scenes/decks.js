@@ -1,7 +1,6 @@
 import React from 'react';
 import {SearchBar, ListItem} from 'react-native-elements';
 import {Button, SafeAreaView, FlatList} from 'react-native';
-
 import {usePouch} from '../utils/db';
 
 // Deck View Scence
